@@ -1,0 +1,46 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 66bca6de5b32e8b67ff0df3fa9d52d1633ce5ab9 COPYRIGHT
+SHA1 2723fdbf1ba4115b4fddd9de5ba80af9adcac19b CREDITS
+SHA1 0a3db3126c07f03cc04a48644f87e3dc8a8975c6 Changes
+SHA1 ff566cb198f30c6c980bbedc6605f1b73eb36a13 INSTALL
+SHA1 47870123f373f5185d6893cb98bf06a8a05510aa LICENSE
+SHA1 12e066f4bf6bb9095409c30dc1a488af8ecb1107 MANIFEST
+SHA1 87496e4291a1cbf1afdd87e6e42d8a0070916b31 META.json
+SHA1 00646778839fe455c9266e873d3ad3915caccdae META.yml
+SHA1 5abf67670ebde9fe5274f406efbc2ec9567e37a1 Makefile.PL
+SHA1 7ffa41153261a273e75caaf24ca7042919aeeb06 README
+SHA1 c04ac05ff2d1c61050b6f363d241abade170952d dist.ini
+SHA1 2da100c75044a6611a0b74569bd42ee377e777d9 doap.ttl
+SHA1 9ce925cf6b2a208c35bcb543267e606ebd42a0b5 lib/MooX/ObjectBuilder.pm
+SHA1 48b5f695b8259988a2fd24b55c6b7258b1d08968 t/01basic.t
+SHA1 ef55e9054798176bf5ca0662dc519ca5ff499a16 t/02head.t
+SHA1 55ec93d2cdc72b6476b6572ae7afdefa7dab9091 t/10-attrib-in-hash.t
+SHA1 2e546c8ff953ab8c1dc0e8b1f499f656419856a2 t/11-attrib-in-array.t
+SHA1 3e9975cad14feb3df8be8e0e4875e976109d0364 t/12-class-as-code.t
+SHA1 2594f9bee71456d007a226b50355fa6a7cdf912f t/20-non-moo-object.t
+SHA1 a66710994568b9bae9949300c5b08bfe2efd275b t/21-arbitrary-class-sub.t
+SHA1 253bc587e30a47606f6bb700b1ae8c91775a3fe8 t/30-edge-cases.t
+SHA1 a02ce9201f1b9491324116b2987bf453fe17b840 t/lib/TestUtils.pm
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.14 (GNU/Linux)
+
+iEYEARECAAYFAlNNy2wACgkQzr+BKGoqfTnBfACfTrH/rmgq/BDxZKqfsfHGYGCS
+3SIAoKjIe4TTG2481JzPbYsvHpsQuO3Z
+=IxxS
+-----END PGP SIGNATURE-----
