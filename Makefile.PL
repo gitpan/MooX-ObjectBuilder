@@ -6,8 +6,8 @@ my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 my $meta = {
   "abstract"       => "lazy construction of objects from extra init args",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
-  "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "dynamic_config" => 1,
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,12 +18,13 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
+                        develop   => { recommends => { "Dist::Inkt::Profile::TOBYINK" => 0 } },
                         runtime   => {
                                        requires => {
                                          "B::Hooks::EndOfScope" => 0,
                                          "Exporter::Shiny" => 0,
                                          "Lexical::Accessor" => 0,
+                                         "MooseX::ConstructInstance" => 0,
                                          "perl" => 5.008,
                                          "Sub::Name" => 0,
                                        },
@@ -33,7 +34,7 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "MooX::ObjectBuilder" => { file => "lib/MooX/ObjectBuilder.pm", version => 0.001 },
+                        "MooX::ObjectBuilder" => { file => "lib/MooX/ObjectBuilder.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -49,10 +50,14 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-ObjectBuilder/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
+do {
+$meta->{prereqs}{runtime}{requires}{'UNIVERSAL::DOES'} = 0 if $] < 5.010000;
+
+};
 
 my %WriteMakefileArgs = (
 	ABSTRACT   => $meta->{abstract},

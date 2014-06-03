@@ -99,12 +99,19 @@ DESCRIPTION
           default => scalar make_builder($class, {...}),
        );
 
+  MooseX::ConstructInstance
+    If your object does the MooseX::ConstructInstance role, then this module
+    will automatically do the right thing and delegate to that for the actual
+    object construction.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=MooX-ObjectBuilder>.
 
 SEE ALSO
     Moo, Moose, Mouse.
+
+    MooseX::ConstructInstance.
 
     MooX::LazyRequire, MooseX::LazyRequire, MooseX::LazyCoercion, etc.
 

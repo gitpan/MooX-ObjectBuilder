@@ -3,8 +3,8 @@
    "author" : [
       "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
    ],
-   "dynamic_config" : 0,
-   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "dynamic_config" : 1,
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -32,7 +32,7 @@
       },
       "develop" : {
          "recommends" : {
-            "Dist::Inkt" : "0.001"
+            "Dist::Inkt::Profile::TOBYINK" : "0"
          }
       },
       "runtime" : {
@@ -40,6 +40,7 @@
             "B::Hooks::EndOfScope" : "0",
             "Exporter::Shiny" : "0",
             "Lexical::Accessor" : "0",
+            "MooseX::ConstructInstance" : "0",
             "Sub::Name" : "0",
             "perl" : "5.008"
          }
@@ -56,7 +57,7 @@
    "provides" : {
       "MooX::ObjectBuilder" : {
          "file" : "lib/MooX/ObjectBuilder.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -75,5 +76,5 @@
          "web" : "https://github.com/tobyink/p5-moox-objectbuilder"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
